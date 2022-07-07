@@ -10,9 +10,9 @@
       <td><span><%= book.title %></span></td>
       <td ><span><%= book.body %></span></td>
       <!--さらに、show,edit,destroy-->
-      <td><%= link_to "Show", book_path(@books.id) %></td>
-      <td><%= link_to "Edit", edit_book_path(@books.id) %></td>
-      <td><%= link_to "Destroy", book_path(@books.id) %></td>
+      <td><%= link_to "Show", book_path(book) %></td>
+      <td><%= link_to "Edit", edit_book_path(book) %></td>
+      <td><%= link_to "Destroy", book_path(book) %></td>
     </tr>
   <% end %>
 </table>
